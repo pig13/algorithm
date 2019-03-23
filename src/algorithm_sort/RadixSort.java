@@ -1,21 +1,57 @@
-package basic_class_01;
+package algorithm_sort;
 
 import java.util.Arrays;
 
-public class Code_07_RadixSort {
+public class RadixSort {
 
     // only for no-negative value
     public static void radixSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
+
         radixSort(arr, 0, arr.length - 1, maxbits(arr));
+    }
+
+    // 优化后的基数排序，基于计数排序，采用一维数组
+    public static void radixSort(int[] arr, int begin, int end, int digit) {
+        final int radix = 10;
+        int i = 0, j = 0;   // j 元素的当前位
+        // count 数组的作用是统计当前位每个数字出现的次数。
+        int[] count = new int[radix];
+        int[] bucket = new int[end - begin + 1];
+        for (int d = 1; d <= digit; d++) {
+            // count数组元素初始值设为0，因为需要重复利用
+            for (i = 0; i < radix; i++) {
+                count[i] = 0;
+            }
+            // count数组 统计当前位每个数字出现的次数
+            for (i = begin; i <= end; i++) {
+                j = getDigit(arr[i], d);
+                count[j]++;
+            }
+            // 此时count数组表示当前位 小于等于 当前位元素 的元素个数
+            for (i = 1; i < radix; i++) {
+                count[i] = count[i] + count[i - 1];
+            }
+            // 从后往前遍历待排序数组，将待排序数组 的当前元素 放到最终位置上
+            for (i = end; i >= begin; i--) {
+                j = getDigit(arr[i], d);
+                bucket[count[j] - 1] = arr[i];
+                count[j]--;
+            }
+            // 将 排好序的bucket 赋值 给原数组
+            for (i = begin, j = 0; i <= end; i++, j++) {
+                arr[i] = bucket[j];
+            }
+        }
     }
 
     public static int maxbits(int[] arr) {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             max = Math.max(max, arr[i]);
+
         }
         int res = 0;
         while (max != 0) {
@@ -23,34 +59,6 @@ public class Code_07_RadixSort {
             max /= 10;
         }
         return res;
-    }
-
-    public static void radixSort(int[] arr, int begin, int end, int digit) {
-        final int radix = 10;
-        int i = 0, j = 0;
-        int[] count = new int[radix];
-        int[] bucket = new int[end - begin + 1];
-        for (int d = 1; d <= digit; d++) {
-            for (i = 0; i < radix; i++) {
-                count[i] = 0;
-            }
-            for (i = begin; i <= end; i++) {
-                j = getDigit(arr[i], d);
-                count[j]++;
-            }
-            for (i = 1; i < radix; i++) {
-                count[i] = count[i] + count[i - 1];
-            }
-
-            for (i = end; i >= begin; i--) {
-                j = getDigit(arr[i], d);
-                bucket[count[j] - 1] = arr[i];
-                count[j]--;
-            }
-            for (i = begin, j = 0; i <= end; i++, j++) {
-                arr[i] = bucket[j];
-            }
-        }
     }
 
     public static int getDigit(int x, int d) {
@@ -141,3 +149,5 @@ public class Code_07_RadixSort {
     }
 
 }
+
+

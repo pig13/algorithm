@@ -1,8 +1,4 @@
-package day01;
-
-import com.sun.deploy.panel.ITreeNode;
-
-import java.nio.channels.Pipe;
+package algorithm_sort;
 
 public class MergeSort {
     public static void main(String[] args) {

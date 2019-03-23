@@ -1,6 +1,4 @@
-package day01;
-
-import com.sun.org.apache.regexp.internal.RE;
+package algorithm_sort;
 
 public class QuickSort {
     public static void main(String[] args) {

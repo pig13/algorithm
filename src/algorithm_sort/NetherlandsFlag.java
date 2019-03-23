@@ -1,4 +1,4 @@
-package day01;
+package algorithm_sort;
 
 public class NetherlandsFlag {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day01;
+package algorithm_sort;
 
 public class SmallSum {
     public static void main(String[] args) {
