@@ -36,6 +36,7 @@ public class Code_11_IsPalindromeList {
 			return true;
 		}
 		Node right = head.next;
+//		Node cur = head.next;
 		Node cur = head;
 		while (cur.next != null && cur.next.next != null) {
 			right = right.next;
