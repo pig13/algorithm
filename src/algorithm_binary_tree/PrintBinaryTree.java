@@ -1,7 +1,6 @@
-package class_04;
+package algorithm_binary_tree;
 
-public class Code_02_PrintBinaryTree {
-
+public class PrintBinaryTree {
     public static class Node {
         public int value;
         public Node left;
