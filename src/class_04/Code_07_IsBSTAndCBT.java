@@ -16,6 +16,7 @@ public class Code_07_IsBSTAndCBT {
 	}
 
 	public static boolean isBST(Node head) {
+		// Sorting binary tree == Binary sorting tree == Search for binary trees
 		if (head == null) {
 			return true;
 		}
@@ -66,8 +67,10 @@ public class Code_07_IsBSTAndCBT {
 				queue.offer(l);
 			}
 			if (r != null) {
+				// 左子树不为空
 				queue.offer(r);
 			} else {
+				// 左右子树都为空
 				leaf = true;
 			}
 		}
