@@ -1,11 +1,8 @@
-package class_05;
+package algorithm_hash_map;
 
-import algorithm_linked_list.PrintCommonPart;
-
-import javax.swing.text.Keymap;
 import java.util.HashMap;
 
-public class Code_02_RandomPool {
+public class RandomRool {
 
     public static class Pool<K> {
         private HashMap<K, Integer> keyIndexMap;
@@ -41,15 +38,10 @@ public class Code_02_RandomPool {
             if (this.size == 0) {
                 return null;
             }
-            int randomIndex = (int) (Math.random() * this.size); // 0 ~ size -1
+            int randomIndex = (int) (Math.random() * this.size);  // 0 ~ size -1
             return this.indexKeyMap.get(randomIndex);
         }
 
-        public void printHashMap() {
-            for (int i = 0; i < this.keyIndexMap.size(); i++) {
-                System.out.println(indexKeyMap.get(i));
-            }
-        }
 
     }
 
