@@ -1,0 +1,86 @@
+搜索 
+
+
+
+	回溯
+	DFS
+		普通 DFS
+			DFS（顶点） 
+			{
+			　　处理当前顶点，记录为已访问
+			　　遍历与当前顶点相邻的所有未访问顶点
+			　　{
+			　　　　　　标记更改;
+			　　　　　　DFS( 下一子状态);
+			　　　　　　恢复更改;
+			　　}
+			}
+		回溯
+			待求解问题，层数不太多，每层选择不太多
+			若在回溯时调用全局变量，递归回来后一定要复原
+
+		迭代加深算法
+			启发式函数，乐观估计函数，迭代加深
+			说人话就是，当层数特别多，每层节点也很多的时候，每次限制访问层数，迭代加深, 用于广搜暴队列，深搜暴时间
+			因为每次需要从头访问，时间复杂度会增加，但最坏情况不会超过2倍，而且当层数越时，系数越趋近1
+			demo
+				IterativeDeepening()
+				{
+				    /*max depth limited in DFS*/
+				    global maxdepth=1;
+				    while (answer hadn't been found)
+				    {
+				        dfs(0);
+				        maxdepth++; 
+				    }
+				    return answer;
+				}
+
+				dfs(int depth)
+				{
+				    /*reach depth limit*/
+				    if (depth==maxdepth)    return;
+				    check whether answer is found;
+				    /*do dfs*/
+				    do dfs(depth+1);
+				}
+
+	BFS
+		普通 BFS
+			求最短距离
+			bfs{
+				初始化队列
+				q={起点s}; 标记s;
+				while(q非空){
+					u = q.pool();
+					if(u==目标状态){return ...}
+					所有与u相邻且未访问的点入队
+					标记u已经访问
+				}
+			}	
+		优先队列 BFS
+			如果目标不是最短距离，而是最短耗费
+		双向 BFS
+		A* 算法
+			又称启发式搜索
+			设计更好的启发式函数，目的就是让我们以更快的速度向终止状态扩展。
+			搞不懂这个h(n) 怎么设计
+
+
+		tip
+			找到最少步数
+			搜索范围的限制
+
+	双向广搜
+	分支定界
+
+
+
+
+玄学
+	随机剪枝
+	根据程序运行时间 剪枝
+
+剪枝
+	可行性剪枝
+	最优剪枝

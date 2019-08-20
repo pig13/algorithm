@@ -1,0 +1,265 @@
+1. 熟悉eclipse
+	快捷键
+		【Alt+↑/↓】 上移/下移当前行(或选中的多行)
+		【ALT+/】 提供内容的辅助
+		【Ctrl+/】 快速添加注释
+		【Ctrl+D】 删除当前行(或选中的多行)
+		【Ctrl+Shift+O】 快速生成import
+		【Ctrl+Shift+F】 格式化代码 ，跟搜狗输入法会冲突，所以要设置一下
+		【Alt+Shift+j】 添加方法的参数注释
+		【Ctrl+F】在当前文件查找string
+		【Ctrl+H】在Workspace内查找string
+		A:新建 ctrl + n 
+	settings
+		字体 courier new	 大小14
+		自动补全  全键盘自动补全
+
+
+2. 熟悉Java语法	
+	1. 类变量(静态变量)与成员变量
+		static 修饰的为类变量
+	2. 数据类型
+		1. 基本类型
+			1. 整型
+			2. 浮点型
+			3. 字符型
+			4. 布尔类型
+		2. 引用类型
+			1. 字符串
+			2. 数组
+			3. 接口
+			4. 类
+	3. 常用包
+		- java.lang	提供基础类。
+		- java.util  JAVA的一些实用工具包
+		- java.io输入流和输入流相的类。
+	4. Scanner的使用(掌握)
+		A:导包
+			import java.util.Scanner;
+		B:创建对象,封装键盘录入
+			Scanner sc = new Scanner(System.in);
+		C:调用方法,获取数据
+			int number = sc.nextInt();
+
+3. java 常用数据类型 以及实现 
+	arrayLIst
+		add
+		get
+		set(index,element)
+		sort(Comparator)
+		clone  浅copy
+		size
+		clear
+		contains
+		isEmpty() 
+		remove(index/o) 删除元素
+		toArray
+			class GFG { 
+			    public static void main (String[] args) 
+			    { 
+			        List<Integer> al = new ArrayList<Integer>(); 
+			        al.add(10); 
+			        al.add(20); 
+			        al.add(30); 
+			        al.add(40); 
+			  
+			        Object[] objects = al.toArray(); 
+			  
+			        // Printing array of objects 
+			        for (Object obj : objects) 
+			            System.out.print(obj + " "); 
+			    } 
+			} 
+
+			class GFG { 
+			    public static void main(String[] args) 
+			    { 
+			        List<Integer> al = new ArrayList<Integer>(); 
+			        al.add(10); 
+			        al.add(20); 
+			        al.add(30); 
+			        al.add(40); 
+			  
+			        Integer[] arr = new Integer[al.size()]; 
+			        arr = al.toArray(arr); 
+			  
+			        for (Integer x : arr) 
+			            System.out.print(x + " "); 
+			    } 
+			} 
+
+		forEach
+			arr.forEach((n)->System.out.println(n));
+		iterator
+			Iterator<Integer> iter = arr.iterator();
+			for(;iter.hasNext();) {
+				System.out.println(iter.next());
+			}
+
+	LinkedList
+		add(index,element)		offer(E e)
+		addFirst
+
+		get(int index)
+		getFirst()
+		getLast()	
+		indexOf(Object o)
+
+		remove(index/o) 默认 头节点
+		removeLast() 
+		clear
+
+		set(index,element)
+
+		size
+		isEmpty()
+		toArray() 
+
+
+
+	set Hashset
+		add(o)
+		remove(o)
+		clear()
+
+		contains(o)
+		size
+		isEmpty() 
+
+
+
+	map Hashmap
+		clear() 
+
+		put(K key, V value) 
+
+		get(Object key) 
+		getOrDefault(Object key, V defaultValue) 
+		keySet() 
+		values()
+		entrySet() 								返回此地图中包含的映射的Set视图。 
+
+		remove(Object key) 
+		remove(Object key, Object value) 		仅当指定的密钥当前映射到指定的值时删除该条目。 
+
+		replace(K key, V value) 				好像没什么用
+		replace(K key, V oldValue, V newValue) 		
+
+		size() 
+		isEmpty() 	
+		containsKey(Object key) 
+		containsValue(Object value)
+
+
+	了解
+		stack
+			push
+			pop
+			peek
+
+			isEmpty
+			contaions
+			search
+		queue
+			LinkedList
+		PQ	PriorityQueue
+			vodi add(E e) 	boolean offer(E e) 
+
+
+			poll() 
+			peek() 
+			remove(Object o) 
+			clear() 
+
+			size() 
+			toArray() 
+
+
+
+
+
+4. Java 常用数据类型 内置方法
+	字符串
+		equals
+		equalsIgnoreCase
+		contains
+		startsWith
+		endsWith
+		isEmpty
+		Matches	 re 
+		length
+		charAt
+		indexOf		返回子串在主串中第一次出现的位置，无返回-1
+		substring	截取主串
+		getBytes	返回bytes 序列
+		toCharArray	返回字符数组
+
+		String.join(间隔符，字符序列)
+		
+	integer
+		integer.min
+		integer.max
+		integer.parseInt
+		integet.valueOf
+		toString
+
+	charactor
+		charactor.compare(char x, char y) 	
+		charactor.isAlphabetic				确定指定的字符（Unicode代码点）是否是字母表。 
+		charactor.isDigit(char ch)
+		charactor.isLetter(char ch) 
+		charactor.isLowerCase(char ch) 
+		isWhitespace(int codePoint) 
+	stringBuffer
+		可变字符串序列
+
+	BigInteger
+		大数，任意精度， math.BigInteger
+
+	BigDecimal
+		小数，任意精度小数，java.math.BigDecimal 
+
+
+5. 常用库
+	Math
+		min
+		max
+		abs
+		pow
+		sqrt
+		ceil		地板
+		floor		房顶
+		random() 
+		log
+
+		三角余弦
+	date
+
+	
+	
+6. 排序
+	基础数据类型可以用，Arrays.sotr(),Collections.sort()
+
+7. array 与 list 互转
+ 	List<String> list=Arrays.asList(array);  
+	List<String> List = Arrays.asList("王利虎","张三","李四");  
+	String[] array = (String[])list.toArray(new String[size]);  	
+
+
+8. 有序的map,set
+	HashMap 无序
+	TreeMap 按key自然顺序或者自定义顺序
+	LinkedHashMap 输出的顺序和输入的相同,
+
+	按value来排序
+		先把map转为list
+	        List<Map.Entry<String,String>> list = new ArrayList<Map.Entry<String,String>>(map.entrySet());
+            Collections.sort(list,new Comparator<Map.Entry<String,String>>() {
+            //升序排序
+	            public int compare(Entry<String, String> o1,
+	                Entry<String, String> o2) {
+	                return o1.getValue().compareTo(o2.getValue());
+	            }
+            
+			});
+

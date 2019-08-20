@@ -1,0 +1,10 @@
+HashMap
+参考： https://zhuanlan.zhihu.com/p/30360734
+
+Capacity 
+LoadFactor
+
+
+初始化大小在第一次put的时候，
+如果装载大小大于 Capacity*LoadFactor，就会进行二倍扩容
+Java8，链表长度大于8后，会转为树结构

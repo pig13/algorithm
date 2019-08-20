@@ -1,0 +1,13 @@
+数论
+	
+欧几里得算法
+	1. 求a,b的最大公约数 gcd
+		gcd(a,b) = gcd(b,a mod b)
+		code 
+
+		public static int gcd(int a, int b) {
+			if (b == 0) {
+				return a;
+			}
+			return gcd(b, a % b);
+		}

@@ -1,0 +1,23 @@
+## Java 数据类型间的转换
+
+### 简单数据类型互转
+1. 小转大
+2. 大转小	丢失精度
+
+### 包装类型的转换
+自动拆装箱，不用管
+
+包装类型转简单类型，XXvValue
+	
+### 字符串类型与其他类型互转
+
+1. 简单数据类型转字符串
+	1. 调用类的串转换方法:X.toString();
+	2. 自动转换:X+“”;
+	3. 使用String的方法:String.volueOf(X);
+
+2. 将字符型直接做为数值转换为其它数据类型
+	1. 根据ASCI码转换，"a"->97	强转
+	2. 直接转，Character.getNumericValue(char ch)	
+	3. integer.pasertInt(string ss)
+	4. 先转换成相应的封装器实例,再调用对应的方法转换成其它类型，Double.valueOf(“32.1”).doubleValue()

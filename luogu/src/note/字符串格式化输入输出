@@ -1,0 +1,65 @@
+### 字符串格式化输入输出
+
+#### 输出
+
+参考： https://www.cnblogs.com/travellife/p/Java-zi-fu-chuan-ge-shi-hua-xiang-jie.html
+
+占位符	表示的数据类型
+d 	整数（十进制）
+c 	Unicode字符
+b 	Boolean值
+s 	String
+f 	浮点数（十进制）
+e 	浮点数（科学计数）
+x 	整数（十六进制）
+h 	散列码（十六进制）
+% 	占位说明符
+
+
+flags
+
+'-' 在最小宽度内左对齐，不可以与“用0填充”同时使用
+
+'+' 结果总是包括一个符号
+
+' ' 正值前加空格，负值前加负号
+
+'0' 结果将用零来填充
+
+',' 每3位数字之间用“，”分隔(只适用于fgG的转换)
+
+'(' 若参数是负数，则结果中不添加负号而是用圆括号把数字括起来(只适用于eEfgG的转换)
+
+```java
+private static void formatFlags() {
+   System.out.println("'-':在最小宽度内左对齐，不可与\"用0填充\"同时使用。");
+   System.out.println(String.format("设置最小宽度为8为，左对齐。%-8d:%-8d:%-8d%n", 1, 22, 99999999));
+   System.out.println(String.format("'0':结果将用零来填充。设置最小宽度为8，%08d:%08d:%08d", 1, -22, 99999990));
+   System.out.println(String.format("'+':结果总是包括一个符号。%+d:%+d:%+d", 1, -2, 0));
+   System.out.println(String.format("' ':正值前加空格，负值前加负号。% d:% d:% d", 1, -2, 0));
+   System.out.println(String.format("',':每3位数字之间用“，”分隔(只适用于fgG的转换)。%,d:%,d:%,d", 1, 100, 1000));
+   System.out.println(String.format("'(':若参数是负数，则结果中不添加负号而是用圆括号把数字括起来(只适用于eEfgG的转换)。%(d:%(d", 1, -1));
+}
+```
+
+
+时间日期格式
+
+System.out.println(String.format("'H':2位数24小时制，不足两位前面补0：%tH（范围：00-23）", calendar));
+
+
+
+#### 输入
+1. System.read()
+2. BufferedReader(new InputStreamReader(System.in)).read()
+3. Scanner
+
+匹配不到都会报错，从头匹配，返回
+next(/pattern)		
+nextInt()
+nextFloat()
+nextLine()
+
+
+### scanner
+	1. next()  获取下一个字符串
