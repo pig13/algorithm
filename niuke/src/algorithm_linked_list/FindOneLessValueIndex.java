@@ -2,7 +2,7 @@ package algorithm_linked_list;
 
 public class FindOneLessValueIndex {
     public static int getLessIndex(int[] arr) {
-        if (arr == null || arr.length == 1) {
+        if (arr == null) {
             return -1;//no exist
         }
         if (arr.length == 1 || arr[0] < arr[1]) {
@@ -25,7 +25,6 @@ public class FindOneLessValueIndex {
             }
         }
         return left;
-
     }
 
     public static void printArray(int[] arr) {

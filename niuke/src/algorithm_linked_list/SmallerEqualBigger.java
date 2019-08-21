@@ -2,112 +2,125 @@ package algorithm_linked_list;
 
 public class SmallerEqualBigger {
     public static class Node {
-        public int value;
-        public Node next;
+        int value;
+        Node next;
 
-        public Node(int data) {
-            this.value = data;
+        Node(int value) {
+            this.value = value;
         }
+
     }
 
-    public static Node listPartition1(Node head, int pivot) {
-        if (head == null) {
-            return null;
+    public static Node listPartition(Node head, int k) {
+        if (head == null || head.next == null) {
+            return head;
         }
+        int len = 0;
         Node cur = head;
-        int i = 0;
         while (cur != null) {
-            i++;
+            len++;
             cur = cur.next;
         }
-        Node[] nodeArr = new Node[i];
-        i = 0;
+        Node[] arr = new Node[len];
         cur = head;
-        for (int j = 0; j < nodeArr.length; j++) {
-            nodeArr[j] = cur;
+        int j = 0;
+        while (cur != null) {
+            arr[j++] = cur;
             cur = cur.next;
         }
-        arrPartition(nodeArr, pivot);
-        for (int j = 0; j < nodeArr.length - 1; j++) {
-            nodeArr[j].next = nodeArr[j + 1];
-        }
-        nodeArr[nodeArr.length - 1].next = null;
-        return nodeArr[0];
-
-    }
-
-    public static void arrPartition(Node[] nodeArr, int pivot) {
-        int small = -1;
-        int big = nodeArr.length;
+        int less = -1;
+        int more = len;
         int index = 0;
-        while (index != big) {
-            if (nodeArr[index].value < pivot) {
-                swap(nodeArr, index++, ++small);
-            } else if (nodeArr[index].value > pivot) {
-                swap(nodeArr, index, --big);
+        while (index < more) {
+            if (arr[index].value < k) {
+                swap(arr, index++, ++less);
+            } else if (arr[index].value > k) {
+                swap(arr, index, --more);
             } else {
                 index++;
             }
         }
+        head = arr[0];
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[i].next = arr[i + 1];
+        }
+        arr[arr.length - 1].next = null;
+        return head;
     }
 
-    public static void swap(Node[] nodeArr, int a, int b) {
-        Node tmp = nodeArr[a];
-        nodeArr[a] = nodeArr[b];
-        nodeArr[b] = tmp;
+
+    public static void swap(Node[] arr, int i, int j) {
+        Node temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
-    public static Node listPartition2(Node head, int pivot) {
-        Node smallHead = null;
-        Node smallTail = null;
-        Node equalHead = null;
-        Node equalTail = null;
-        Node bigHead = null;
-        Node bigTail = null;
-        Node next = null;
-        // every node distributed to three lists
-        while (head != null) {
-            next = head.next;
-            head.next = null;
-            if (head.value < pivot) {
-                if (smallHead == null) {
-                    smallHead = head;
-                    smallTail = head;
+
+    public static Node listPartition2(Node head, int k) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node lessStart = null;
+        Node lessEnd = null;
+        Node moreStart = null;
+        Node moreEnd = null;
+        Node equalStart = null;
+        Node equalEnd = null;
+        Node cur = head;
+        while (cur != null) {
+            if (cur.value < k) {
+                if (lessEnd != null) {
+                    lessEnd.next = cur;
+                    lessEnd = lessEnd.next;
                 } else {
-                    smallTail.next = head;
-                    smallTail = head;
+                    lessStart = cur;
+                    lessEnd = cur;
                 }
-            } else if (head.value == pivot) {
-                if (equalHead == null) {
-                    equalHead = head;
-                    equalTail = head;
+            } else if (cur.value > k) {
+                if (moreEnd != null) {
+                    moreEnd.next = cur;
+                    moreEnd = moreEnd.next;
                 } else {
-                    equalTail.next = head;
-                    equalTail = head;
+                    moreStart = cur;
+                    moreEnd = cur;
                 }
             } else {
-                if (bigHead == null) {
-                    bigHead = head;
-                    bigTail = head;
+                if (equalEnd != null) {
+                    equalEnd.next = cur;
+                    equalEnd = equalEnd.next;
                 } else {
-                    bigTail.next = head;
-                    bigTail = head;
+                    equalStart = cur;
+                    equalEnd = cur;
                 }
             }
-            head = next;
+            cur = cur.next;
         }
-        // small and equal reconnect
-        if (smallTail != null) {
-            smallTail.next = equalHead;
-            equalTail = equalTail == null ? smallTail : equalTail;
-
+        head = null;
+        Node tail = null;
+        if (lessEnd != null) {
+            head = lessStart;
+            tail = lessEnd;
         }
-        // all reconnect
-        if (equalTail != null) {
-            equalTail.next = bigHead;
+        if (equalEnd != null) {
+            if (tail != null) {
+                tail.next = equalStart;
+                tail = equalEnd;
+            } else {
+                head = equalStart;
+                tail = equalEnd;
+            }
         }
-        return smallHead != null ? smallHead : equalHead != null ? equalHead : bigHead;
-
+        if (moreEnd != null) {
+            if (tail != null) {
+                tail.next = moreStart;
+                tail = moreEnd;
+            } else {
+                head = moreStart;
+                tail = moreEnd;
+            }
+        }
+        tail.next = null;
+        return head;
 
     }
 
@@ -130,7 +143,7 @@ public class SmallerEqualBigger {
         head1.next.next.next.next.next = new Node(2);
         head1.next.next.next.next.next.next = new Node(5);
         printLinkedList(head1);
-//        head1 = listPartition1(head1, 5);
+//        head1 = listPartition(head1, 5);
         head1 = listPartition2(head1, 5);
         printLinkedList(head1);
 
