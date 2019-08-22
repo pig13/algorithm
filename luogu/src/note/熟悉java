@@ -97,21 +97,17 @@
 			}
 
 	LinkedList
-		add(index,element)		offer(E e)
-		addFirst
+	    Queue接口
+	        offer,poll,peek.  不会抛出异常
+	        add,remove,element  无效会抛出异常
+	    Deque接口
+	        offerFirst,offerLast,pollFirst,pollLast,peekFirst,peekLast
+	        push,pop
+        AbstractSequentialList类
+            实现数据的随机存取（利用了一个索引index）；
+            get,set,add,remove
 
-		get(int index)
-		getFirst()
-		getLast()	
-		indexOf(Object o)
-
-		remove(index/o) 默认 头节点
-		removeLast() 
-		clear
-
-		set(index,element)
-
-		size
+        size()
 		isEmpty()
 		toArray() 
 

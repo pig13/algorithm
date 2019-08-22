@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f90ec253-1cb9-4268-bcca-c532bd0d3e44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niuke/src/algorithm_linked_list/FindOneLessValueIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/niuke/src/algorithm_linked_list/FindOneLessValueIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niuke/src/algorithm_linked_list/SmallerEqualBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/niuke/src/algorithm_linked_list/SmallerEqualBigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/LeetCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task538.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task543.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task560.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task581.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task621.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task647.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task671.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/hot/Task739.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luogu/src/note/熟悉java" beforeDir="false" afterPath="$PROJECT_DIR$/luogu/src/note/熟悉java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/niuke/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/niuke/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/niuke/algorithm_linked_list/FindOneLessValueIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/niuke/algorithm_linked_list/FindOneLessValueIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/niuke/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/niuke/test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,16 +33,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/niuke/src/test.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task671.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="369">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task581.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task560.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task543.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <folding>
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task538.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#427#436#0" expanded="true" />
+                <element signature="e#340#358#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Set.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="189" column="12" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +122,16 @@
       <list>
         <option value="$PROJECT_DIR$/niuke/src/algorithm_linked_list/SmallerEqualBigger.java" />
         <option value="$PROJECT_DIR$/niuke/src/algorithm_linked_list/FindOneLessValueIndex.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task739.java" />
+        <option value="$PROJECT_DIR$/luogu/src/note/熟悉java" />
         <option value="$PROJECT_DIR$/niuke/src/test.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task647.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task621.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task671.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task581.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task560.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task543.java" />
+        <option value="$PROJECT_DIR$/LeetCode/src/hot/Task538.java" />
       </list>
     </option>
   </component>
@@ -59,8 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,6 +159,24 @@
             <path>
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="niuke" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -84,18 +190,23 @@
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="niuke" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm_linked_list" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm_binary_tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566386013797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566477499852" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
@@ -110,17 +221,79 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="niuke" />
+  <component name="RunManager" selected="Application.Task538">
+    <configuration name="Task538" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hot.Task538" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task543" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hot.Task543" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task560" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hot.Task560" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task581" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hot.Task581" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task647" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hot.Task647" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Task538" />
+        <item itemvalue="Application.Task543" />
+        <item itemvalue="Application.Task560" />
+        <item itemvalue="Application.Task581" />
+        <item itemvalue="Application.Task647" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +351,8 @@
       <workItem from="1566025140879" duration="18508000" />
       <workItem from="1566086011383" duration="40582000" />
       <workItem from="1566290898848" duration="13674000" />
-      <workItem from="1566368827308" duration="10122000" />
+      <workItem from="1566368827308" duration="10239000" />
+      <workItem from="1566400662171" duration="37560000" />
     </task>
     <task id="LOCAL-00001" summary="2019-3-21 23:00:45">
       <created>1553180456399</created>
@@ -288,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10133000" />
+    <option name="totallyTimeSpent" value="47810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -299,7 +473,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32980332" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25113463" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="6" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3258786" />
@@ -312,7 +486,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3258786" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.3258786" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.3434505" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3290735" />
       <window_info anchor="bottom" id="Problems" order="13" />
       <window_info anchor="right" id="aiXcoder" order="0" />
@@ -329,6 +503,42 @@
       <window_info anchor="right" id="Palette&#9;" order="11" />
       <window_info anchor="right" id="Coverage" order="12" side_tool="true" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" weight="0.32980332" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.2549168" />
+      <window_info id="Structure" order="6" weight="0.24962178" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3258786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3258786" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40894568" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3258786" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290735" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3258786" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.3434505" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3290735" />
+      <window_info anchor="bottom" id="Problems" order="13" />
+      <window_info anchor="right" id="aiXcoder" order="0" />
+      <window_info anchor="right" id="Module Dependencies" order="1" weight="0.32980332" />
+      <window_info anchor="right" id="Key Promoter X" order="2" show_stripe_button="false" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.24962178" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32980332" />
+      <window_info anchor="right" id="Capture Analysis" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -351,6 +561,27 @@
     <MESSAGE value="2019-4-3 08:22:17" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="root.val" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>dp[i][j] = dp[i][j - 1] + dp[i + 1][j] - dp[i + 1][j - 1];</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dp[i][j] = dp[i][j - 1] + dp[i + 1][j] - dp[i + 1][j - 1]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/niuke/src/algorithm_linked_list/SmallerEqualBigger.java">
@@ -410,17 +641,279 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task739.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/luogu/src/note/熟悉java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2206">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="671" column="13" selection-start-line="671" selection-start-column="13" selection-end-line="671" selection-end-column="13" />
+          <folding>
+            <element signature="e#8008#8009#0" expanded="true" />
+            <element signature="e#8036#8037#0" expanded="true" />
+            <element signature="e#23214#23215#0" expanded="true" />
+            <element signature="e#23241#23242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="327" column="32" selection-start-line="327" selection-start-column="32" selection-end-line="327" selection-end-column="32" />
+          <folding>
+            <element signature="e#12107#12108#0" expanded="true" />
+            <element signature="e#12147#12148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+          <folding>
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/MaxTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1434">
+          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/MaxRectangleArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/Manacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/KMP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/BFPRT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/advanced_01/AllLessNumSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/niuke/src/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="207">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#189#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task647.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task621.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/niuke/src/algorithm_binary_tree/SerializeAndReconstructTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task671.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task581.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task560.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task543.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="189" column="12" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/src/hot/Task538.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#340#358#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LeetCode</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
