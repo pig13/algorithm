@@ -1,4 +1,4 @@
-package advanced_01;
+package shenxinfu;
 
 public class test {
 

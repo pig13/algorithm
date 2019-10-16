@@ -140,6 +140,7 @@ public class BFPRT {
     }
 
     public static int getMedian(int[] arr, int begin, int end) {
+        // 获取排序后的中位数
         Arrays.sort(arr, begin, end + 1);
         int sum = begin + end;
         int mid = (sum / 2) + (sum % 2);

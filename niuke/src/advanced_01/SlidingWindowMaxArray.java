@@ -35,7 +35,7 @@ public class SlidingWindowMaxArray {
         int[] arr = {4, 3, 5, 4, 3, 3, 6, 7};
         int[] res = getMaxWindow(arr, 3);
         for (int i : res) {
-            System.out.println(i);
+            System.out.print(i+" ");
 
         }
     }

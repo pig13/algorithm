@@ -22,8 +22,8 @@ public class Code_06_PrintMatrixSpiralOrder {
 				System.out.print(m[i][tC] + " ");
 			}
 		} else {
-			int curC = tC;
 			int curR = tR;
+			int curC = tC;
 			while (curC != dC) {
 				System.out.print(m[tR][curC] + " ");
 				curC++;
